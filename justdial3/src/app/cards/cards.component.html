@@ -1,0 +1,59 @@
+<br>
+
+<div class="container">
+  <h4>Popular services</h4>
+    <div class="row">
+    <div class="card m-3"  *ngFor="let ele of item" style="max-width: 350px;">
+        <div class="row">
+          <div class="col">
+            <img src="{{ele.img}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title">{{ele.title}}</h5>
+              
+                  <ul class="card-text">
+                      <li>{{ele.list1}}</li>
+                      <li>{{ele.list2}}</li>
+                      <li>{{ele.list3}}</li>
+                      <li>{{ele.list4}}</li>
+                  </ul>
+              
+              
+            </div>
+          </div>
+
+          
+        </div>
+        
+      </div>
+           <br>
+      <h4>What's Trending?</h4>
+      <br>
+      <div class="card m-3"  *ngFor="let ele of cardsitem" style="max-width: 350px;">
+        <div class="row" >
+          <div class="col">
+            <img src="{{ele.img}}"  class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col">
+            <div class="card-body">
+              <h5 class="card-title">{{ele.title}}</h5>
+              
+                  <ul class="card-text">
+                      <li>{{ele.list1}}</li>
+                      <li>{{ele.list2}}</li>
+                      <li>{{ele.list3}}</li>
+                      <li>{{ele.list4}}</li>
+                  </ul>
+              
+              
+            </div>
+          </div>
+
+          
+        </div>
+        
+      </div>
+      
+    </div>  
+</div>
