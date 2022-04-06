@@ -10,6 +10,9 @@ import { ListCourseComponent } from './components/list-course/list-course.compon
 import { CourseComponent } from './components/course/course.component';
 import { ServiceComponent } from './components/service/service.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { NotfoundComponent } from './components/notfound/notfound.component';
+import { HomeComponent } from './components/home/home.component';
+
 
 
 
@@ -23,6 +26,9 @@ import { ContactComponent } from './components/contact/contact.component';
     CourseComponent,
     ServiceComponent,
     ContactComponent,
+    NotfoundComponent,
+    HomeComponent,
+    
    
     
   ],
