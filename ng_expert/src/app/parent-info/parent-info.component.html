@@ -1,0 +1,13 @@
+<p>parent-info works!</p>
+<p>This is from parent to child interaction </p><h4>{{data|json}}-->{{number|json}} </h4>
+<br>
+<p>This if from child to parent output interaction</p>
+<h4>{{child|json}}</h4>
+<app-child-info
+[list]="data"
+[phone]="number"
+(sendmsg)="receive($event)"
+
+>
+
+</app-child-info>

@@ -1,0 +1,29 @@
+<p>switch works!</p>
+<ul>
+    <h2> *ngSwitch Case</h2>
+    <li *ngFor="let item of cmpy" [ngSwitch]="item.training">
+        <div *ngSwitchCase="'Mean/mern'" class="text-primary"> I am in Mean/mern stack</div>
+        <div *ngSwitchCase="'API'" class="text-info"> I am in API</div>
+        <div *ngSwitchCase="'Devops'" class="text-danger"> I am in Devops</div>
+        <div *ngSwitchDefault class="text-success"> I am not part of training</div>
+    </li>
+</ul>
+
+<ul>
+    <h2>ngStyle with ngSwitch case </h2>
+    <li *ngFor="let item of cmpy" [ngSwitch]="item.training">
+        <div [ngStyle]="{'color': getColors(item.training)}"> batch {{item.batch}} from {{item.company}} is trained on  {{item.training}}
+        </div>
+    </li>
+</ul>
+
+<ul>
+    <h2>ngClass directive </h2>
+    <li *ngFor="let item of cmpy">
+        <div [ngClass]="{
+            'text-primary': item.training==='API',
+            'text-danger': item.training==='Devops'
+        }">The training is on {{item.training}}
+        </div>
+    </li>
+</ul>
