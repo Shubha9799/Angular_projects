@@ -8,6 +8,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainContainerComponent } from './components/main-container/main-container.component';
 import { ListCourseComponent } from './components/list-course/list-course.component';
 import { CourseComponent } from './components/course/course.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 
 
@@ -19,6 +21,8 @@ import { CourseComponent } from './components/course/course.component';
     MainContainerComponent,
     ListCourseComponent,
     CourseComponent,
+    ServiceComponent,
+    ContactComponent,
    
     
   ],
