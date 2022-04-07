@@ -1,0 +1,22 @@
+<div class="border border-info m-2 p-3" style="background-color: lightgoldenrodyellow;">
+    <h2 style="color: blue;">Login Form</h2>
+  <form novalidate [formGroup]="myform1">
+    <fieldset>
+        <div class="form-group">
+            <label>Username </label>
+            <input formControlName="Uname" type="text" class="form-control">
+        </div>
+        
+    </fieldset>
+   
+    <div class="form-group">
+        <label>Password</label>
+        <input formControlName="password" type="password" class="form-control">
+    </div>
+    
+
+   {{myform1.value|json}}
+    <br>
+    <button type="button" class="btn btn-primary" value="Submit">Login</button>
+    </form>
+</div>

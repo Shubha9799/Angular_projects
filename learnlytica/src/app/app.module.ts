@@ -14,6 +14,7 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { HomeComponent } from './components/home/home.component';
 import { AddressComponent } from './components/address/address.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
 
 
 
@@ -31,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NotfoundComponent,
     HomeComponent,
     AddressComponent,
+    LoginComponent,
     
    
     

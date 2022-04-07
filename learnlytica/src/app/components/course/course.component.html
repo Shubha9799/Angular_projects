@@ -24,4 +24,27 @@
     </div>
 </div>
     </div>
+
+    <div class="row border-bottom" style="margin-top: 50px;">
+        <div class="col-10">
+    <h3 style="color: gray;">Cloud Computing</h3>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-outline-secondary">View all</button>
+        </div>
+    
+    </div>
+    <div class="row">
+    <div class="card m-3" *ngFor="let ele of items2" style="width: 15rem;">
+        <img src="{{ele.img}}"
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{ele.title}}</h5>
+            <p>{{ele.price}}</p>
+            <h6 class="card-subtitle mb-2 text-muted">Learnlytica</h6>
+           
+            
+        </div>
+    </div>
+        </div>
 </div>
