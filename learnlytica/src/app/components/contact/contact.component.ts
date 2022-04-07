@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { FormControl, FormGroup ,Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-contact',
@@ -7,15 +7,15 @@ import { FormControl, FormGroup } from '@angular/forms';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-  langs = ['ENG', "HIND", 'TELGU', 'KANDA'];
-
+  langs = ['ENGLISH', "HINDI", 'TELUGU', 'KANNADA'];
+  emailRegEx = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
   myform : FormGroup = new FormGroup(
     {
-    fname: new FormControl(),
-    lname: new FormControl(),
-    email: new FormControl(),
-    password: new FormControl(),
-    lang: new FormControl()
+    fname: new FormControl('',Validators.required),
+    lname: new FormControl('',Validators.required),
+    email: new FormControl('',[Validators.email,Validators.required,Validators.pattern(this.emailRegEx)]),
+    password: new FormControl('',[Validators.minLength(5),Validators.maxLength(8),Validators.required]),
+    lang: new FormControl('',Validators.required)
   });
   constructor() { }
 
