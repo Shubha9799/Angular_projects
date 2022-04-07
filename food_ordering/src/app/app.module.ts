@@ -7,6 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainContainerComponent } from './components/main-container/main-container.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { ContactComponent } from './components/contact/contact.component';
     MainContainerComponent,
     FooterComponent,
     ContactComponent,
+    LoginComponent,
+    SignUpComponent,
+   
    
   ],
   imports: [
