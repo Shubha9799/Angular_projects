@@ -12,6 +12,8 @@ import { ServiceComponent } from './components/service/service.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { HomeComponent } from './components/home/home.component';
+import { AddressComponent } from './components/address/address.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -28,13 +30,15 @@ import { HomeComponent } from './components/home/home.component';
     ContactComponent,
     NotfoundComponent,
     HomeComponent,
+    AddressComponent,
     
    
     
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
