@@ -6,6 +6,9 @@
           <div class="form-group">
               <label>Name </label>
               <input formControlName="name" type="text" class="form-control">
+              <div class="text-danger" *ngIf=" myform.controls['name'].touched && myform.controls['name'].invalid">
+                *Please enter your name
+            </div>
           </div>
           
       </fieldset>
@@ -13,6 +16,9 @@
       <div class="form-group">
           <label>Phone number</label>
           <input formControlName="phone" type="text" class="form-control">
+          <div class="text-danger" *ngIf=" myform.controls['phone'].touched && myform.controls['phone'].invalid">
+            *Please enter your name
+        </div>
       </div>
      
   
@@ -27,7 +33,7 @@
           </div>
     </div>
     <div class="col-12">
-      <button type="submit" (click)="getValues()" class="btn btn-primary" style="align-items: center;">Log in</button>
+      <button type="submit" [disabled]="myform.invalid" (click)="getValues()" class="btn btn-primary" style="align-items: center;">Log in</button>
       <a href="/signup" >New to Zomato? create account</a>
     </div>
   </form>

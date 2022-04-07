@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl ,FormGroup} from '@angular/forms';
+import { FormControl ,FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-sign-up',
@@ -7,14 +7,15 @@ import { FormControl ,FormGroup} from '@angular/forms';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
+  emailRegEx = '^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$';
   myform1 : FormGroup = new FormGroup(
     {
-    name: new FormControl(),  
-    phone: new FormControl(),
-    email:new FormControl(),
-    city:new FormControl(),
-    address:new FormControl(),
-    zip:new FormControl()
+    name: new FormControl('',Validators.required),  
+    phone: new FormControl('',Validators.required),
+    email:new FormControl('',[Validators.email,Validators.required,Validators.pattern(this.emailRegEx)]),
+    city:new FormControl('',Validators.required),
+    address:new FormControl('',Validators.required),
+    zip:new FormControl('',Validators.required)
 
     
   });
