@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from 'src/app/services/config.service';
 
 @Component({
   selector: 'app-course',
@@ -50,9 +51,20 @@ items2=[{
   price:5999,
   img:'https://dz8fbjd9gwp2s.cloudfront.net/courses/61adc9790cf29556db8088ee/61adc9790cf29556db8088ee_scaled_cover.jpg?v=1'
 }];
-  constructor() { }
+ 
+//http service
+constructor(private myConfig:ConfigService) 
+{
+
+ }
 
   ngOnInit(): void {
+    //return type--observable
+    this.myConfig.getCourseConfig().subscribe(
+      (data)=>{
+        console.log(data)
+      }
+    );
   }
 
 }
