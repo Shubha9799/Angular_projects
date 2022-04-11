@@ -1,3 +1,4 @@
+
 <div class="border border-info m-2 p-3" style="background-color: lightgoldenrodyellow;">
     <h2 style="color: blue;">Login Form</h2>
   <form novalidate [formGroup]="myform1">
@@ -25,6 +26,9 @@
 
    {{myform1.value|json}}
     <br>
+    <button mat-button mat-dialog-close>Cancel</button>
     <button [disabled]="myform1.invalid" type="button" class="btn btn-primary" value="Submit">Login</button>
     </form>
 </div>
+
+
