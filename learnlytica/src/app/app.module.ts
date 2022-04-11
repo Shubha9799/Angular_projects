@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { MatSliderModule } from '@angular/material/slider';
-import { MatDialogModule } from '@angular/material/dialog';
+import { MaterialExampleModule } from './material/material.module';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,6 +20,7 @@ import { LoginComponent } from './components/login/login.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ListProfileComponent } from './components/list-profile/list-profile.component';
 
 
 
@@ -39,6 +39,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     AddressComponent,
     LoginComponent,
+    ListProfileComponent,
     
    
     
@@ -49,8 +50,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MatSliderModule,
-    MatDialogModule
+    MaterialExampleModule
+  
   
 
   ],
