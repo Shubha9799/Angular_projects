@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { from, interval, Observable, of } from 'rxjs';
+import { from, interval, map, Observable, of, skip, take } from 'rxjs';
 
 @Component({
   selector: 'app-reactive',
@@ -20,7 +20,20 @@ export class ReactiveComponent implements OnInit {
   )
   from ([1,2,10,20]).subscribe((val:Number)=>console.log(`I am from-->obs stream value-->${val}`)
   )
-  }
+  
+
+  //using take operator
+  const obsT1=interval(1000)
+  const only6val=obsT1.pipe(
+    take(6)   , //only first 10 values
+    map(val=> val * 10 )  ,
+    skip(2)  //skips first 2 values i.e, 0 and 10
+     
+  );
+  only6val.subscribe((val:Number)=>console.log(`operation using take-->${val}`))
+}
+
+
   ngOnDestroy():void{
     console.log('from destroy');
     this.myobs$?.unscribe();
