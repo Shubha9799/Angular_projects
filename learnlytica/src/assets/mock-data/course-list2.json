@@ -2,11 +2,11 @@
     "sub-home": {
         "data": [
             {
-                "_id": "61aa18860cf26833c8eca46c",
+                "_id": "61a9e34f0cf2f90364772b94",
                 "spayee:resource": {
-                    "spayee:title": "Git as a DevOps tool",
+                    "spayee:title": "Cloud automation for devops",
                     "spayee:publisher": "Learnlytica",
-                    "spayee:courseUrl": "Git-as-a-DevOps-tool",
+                    "spayee:courseUrl": "",
                     "spayee:courseType": "normal",
                     "spayee:coverVersion": 1,
                     "spayee:gstRate": 18,
@@ -35,11 +35,11 @@
                 }
             },
             {
-                "_id": "61aa193f0cf272b4d2eef49a",
+                "_id": "61aa20e00cf2f90364776078",
                 "spayee:resource": {
-                    "spayee:title": "DevOps Automation implementation",
+                    "spayee:title": "Azure Data warehousing",
                     "spayee:publisher": "Learnlytica",
-                    "spayee:courseUrl": "DevOps---Implementing-DevOps-Automation",
+                    "spayee:courseUrl": "",
                     "spayee:courseType": "normal",
                     "spayee:language": "English",
                     "spayee:shortDescription": "",
@@ -68,11 +68,11 @@
                 }
             },
             {
-                "_id": "61aaffed0cf2a71c5139fc7c",
+                "_id": "61adc9790cf29556db8088ee",
                 "spayee:resource": {
-                    "spayee:title": "Chef as a DevOps tool",
+                    "spayee:title": "AWS solution architect training",
                     "spayee:publisher": "Learnlytica",
-                    "spayee:courseUrl": "Using-Chef-for-DevOps",
+                    "spayee:courseUrl": "",
                     "spayee:courseType": "normal",
                     "spayee:coverVersion": 1,
                     "spayee:language": "English",
@@ -101,11 +101,11 @@
                 }
             },
             {
-                "_id": "61ab04c30cf272041d78452f",
+                "_id": "61af23880cf29556db81488e",
                 "spayee:resource": {
-                    "spayee:title": "Using Jenkins for DevOps",
+                    "spayee:title": "Solutioning cloud operation",
                     "spayee:publisher": "Learnlytica",
-                    "spayee:courseUrl": "Using-Jenkins-for-DevOps",
+                    "spayee:courseUrl": "",
                     "spayee:courseType": "normal",
                     "spayee:coverVersion": 1,
                     "spayee:language": "English",
@@ -140,5 +140,3 @@
     },
     "response": true
 }
-
-

@@ -23,3 +23,60 @@
         </app-course>
     </div>
 </div>
+<br>
+<div class="container">
+    <div class="row border-bottom" style="margin-top: 50px;">
+        <div class="col-10">
+    <h3 style="color: gray;">Cloud Computing</h3>
+        </div>
+        <div class="col">
+            <button type="button" class="btn btn-outline-secondary">View all</button>
+        </div>
+    
+    </div>
+    <br>
+    <div class="row">
+        <div class="col" *ngFor="let course of mycourse?.['sub-home'].data">
+            
+            <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
+            </app-course>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row border-bottom" style="margin-top: 50px;">
+            <div class="col-10">
+        <h3 style="color: gray;">Software Testing</h3>
+            </div>
+            <div class="col">
+                <button type="button" class="btn btn-outline-secondary">View all</button>
+            </div>
+        
+        </div>
+        <br>
+        <div class="row">
+            <div class="col" *ngFor="let course of mycourse?.['sub-home'].data">
+                
+                <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
+                </app-course>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row border-bottom" style="margin-top: 50px;">
+                <div class="col-10">
+            <h3 style="color: gray;">Big Data</h3>
+                </div>
+                <div class="col">
+                    <button type="button" class="btn btn-outline-secondary">View all</button>
+                </div>
+            
+            </div>
+            <br>
+            <div class="row">
+                <div class="col" *ngFor="let course of mycourse2?.['sub-home'].data">
+                    
+                    <app-course [imgid]="course._id" [configs]="course['spayee:resource']">
+                    </app-course>
+                </div>
+            </div>
