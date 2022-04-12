@@ -9,6 +9,7 @@ import { ServiceComponent } from './components/service/service.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { ListProfileComponent } from './components/list-profile/list-profile.component';
+import { ProfileDetailsComponent } from './profile-details/profile-details.component';
 
 
 const routes: Routes = [
@@ -18,6 +19,8 @@ const routes: Routes = [
   {path:'contact',component:ContactComponent},
   {path:'login',component:LoginComponent},
   { path:'profiles', component:ListProfileComponent },
+  {path:'profiles/pid',component:ProfileDetailsComponent}  ,
+
   {path:'**',component:NotfoundComponent}
 
  

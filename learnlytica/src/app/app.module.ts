@@ -21,9 +21,17 @@ import { LoginComponent } from './components/login/login.component';
 import {HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListProfileComponent } from './components/list-profile/list-profile.component';
+import { ProfileDetailsComponent } from './profile-details/profile-details.component';
+import { Route, Routes } from '@angular/router';
 
 
+const myRoutes: Routes = [
 
+  { path: 'course', component: ListCourseComponent },
+  { path: 'services', component: ServiceComponent },
+  { path: 'contact', component: ContactComponent }
+
+];
 
 @NgModule({
   declarations: [
@@ -40,6 +48,7 @@ import { ListProfileComponent } from './components/list-profile/list-profile.com
     AddressComponent,
     LoginComponent,
     ListProfileComponent,
+    ProfileDetailsComponent,
     
    
     
