@@ -10,6 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { ListProfileComponent } from './components/list-profile/list-profile.component';
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path:'login',component:LoginComponent},
   { path:'profiles', component:ListProfileComponent },
   {path:'profiles/pid',component:ProfileDetailsComponent}  ,
+  {path:'rxjs',component:ReactiveComponent},
 
   {path:'**',component:NotfoundComponent}
 
