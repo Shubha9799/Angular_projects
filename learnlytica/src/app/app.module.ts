@@ -23,6 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ListProfileComponent } from './components/list-profile/list-profile.component';
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
 import { Route, Routes } from '@angular/router';
+import { ReactiveComponent } from './components/reactive/reactive.component';
 
 
 const myRoutes: Routes = [
@@ -49,6 +50,7 @@ const myRoutes: Routes = [
     LoginComponent,
     ListProfileComponent,
     ProfileDetailsComponent,
+    ReactiveComponent,
     
    
     
