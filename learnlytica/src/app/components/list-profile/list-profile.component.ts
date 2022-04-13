@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { tap } from 'rxjs';
+import { elementAt, tap } from 'rxjs';
 import { UserService } from 'src/app/services/user.service';
-
 export interface PeriodicElement {
   name: string;
   position: number;
@@ -20,7 +19,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
   { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
 ];
-// added data into json file file, we can give api call httpclient service
 @Component({
   selector: 'app-list-profile',
   templateUrl: './list-profile.component.html',
@@ -29,32 +27,26 @@ const ELEMENT_DATA: PeriodicElement[] = [
 export class ListProfileComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+
+
+
   userdata: any;
   mydata: any;
-  
+
   constructor(private user: UserService) { }
-
   ngOnInit(): void {
-
-    this.userdata = this.user.getUserProfile(); 
-    this.userdata.subscribe( (data: any) => { this.mydata = data } );
     this.userdata = this.user.getUserProfile();
     this.userdata
       .pipe(
-
         tap((userList: any) => {
           return userList.map(
-
             (element: any, index: number, arr: any) => {
-              element['title'] = 'thbs';
-              element['name'] = "Mr/Ms." + element['name'];
-              return element
-
-            })//closing of element
-
-        })//closing of tap
+              element['title'] = 'thbs' + index;
+              element['name'] = "mr." + element['name'];
+              return elementAt;
+            })
+        })
       )
-      .subscribe(
-        (data: any) => { this.mydata = data });
+      .subscribe((data: any) => { this.mydata = data });
   }
 }

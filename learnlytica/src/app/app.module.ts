@@ -25,6 +25,7 @@ import { ProfileDetailsComponent } from './profile-details/profile-details.compo
 import { Route, Routes } from '@angular/router';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TitlePipe } from './pipes/title.pipe';
+import { BracketPipe } from './pipes/bracket.pipe';
 
 
 const myRoutes: Routes = [
@@ -53,6 +54,7 @@ const myRoutes: Routes = [
     ProfileDetailsComponent,
     ReactiveComponent,
     TitlePipe,
+    BracketPipe,
     
    
     
