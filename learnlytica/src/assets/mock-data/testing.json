@@ -2,44 +2,11 @@
     "sub-home": {
         "data": [
             {
-                "_id": "61a9e34f0cf2f90364772b94",
+                "_id": "61af4cc80cf299e5549a8cf2",
                 "spayee:resource": {
-                    "spayee:title": "Cloud Automation for DevOps",
+                    "spayee:title": "Testing Methods: Manual vs. Automated",
                     "spayee:publisher": "Learnlytica",
-                    "spayee:courseUrl": "Cloud-Automation-for-DevOps",
-                    "spayee:courseType": "normal",
-                    "spayee:language": "English",
-                    "spayee:shortDescription": "",
-                    "spayee:coverVersion": 1,
-                    "spayee:gstRate": 18,
-                    "spayee:mrp": 1699,
-                    "spayee:price": 1599,
-                    "spayee:pricingIncludingTaxes": true,
-                    "spayee:productVariants": [
-                        {
-                            "validityVariants": [
-                                {
-                                    "type": "ONE_TIME",
-                                    "validityType": "none",
-                                    "mrp": 1699,
-                                    "price": 1599,
-                                    "id": "v1-1699-1599",
-                                    "label": "Lifetime"
-                                }
-                            ],
-                            "id": "p1",
-                            "productType": "INR599"
-                        }
-                    ],
-                    "spayee:purchaseType": "cart"
-                }
-            },
-            {
-                "_id": "61aa20e00cf2f90364776078",
-                "spayee:resource": {
-                    "spayee:title": "Azure Data Warehousing",
-                    "spayee:publisher": "Learnlytica",
-                    "spayee:courseUrl": "Data-Warehousing-with-Azure-1638539488084",
+                    "spayee:courseUrl": "Manual-vs-Automated-Testing",
                     "spayee:courseType": "normal",
                     "spayee:language": "English",
                     "spayee:shortDescription": "",
@@ -61,25 +28,25 @@
                                 }
                             ],
                             "id": "p1",
-                            "productType": "INR599"
+                            "productType": "INR499"
                         }
                     ],
                     "spayee:purchaseType": "cart"
                 }
             },
             {
-                "_id": "61adc9790cf29556db8088ee",
+                "_id": "61b33bce0cf294f9b3776c66",
                 "spayee:resource": {
-                    "spayee:title": "AWS Solution Architect Training (Live Training recording)",
+                    "spayee:title": "Test Driven Development",
                     "spayee:publisher": "Learnlytica",
-                    "spayee:courseUrl": "AWS-Solution-Architect-Training",
+                    "spayee:courseUrl": "Test-Driven-Development",
                     "spayee:courseType": "normal",
+                    "spayee:coverVersion": 2,
                     "spayee:language": "English",
                     "spayee:shortDescription": "",
-                    "spayee:coverVersion": 1,
                     "spayee:gstRate": 18,
-                    "spayee:mrp": 9999,
-                    "spayee:price": 5999,
+                    "spayee:mrp": 1299,
+                    "spayee:price": 1099,
                     "spayee:pricingIncludingTaxes": true,
                     "spayee:productVariants": [
                         {
@@ -87,25 +54,58 @@
                                 {
                                     "type": "ONE_TIME",
                                     "validityType": "none",
-                                    "mrp": 9999,
-                                    "price": 5999,
-                                    "id": "v1-9999-5999",
+                                    "mrp": 1299,
+                                    "price": 1099,
+                                    "id": "v1-1299-1099",
                                     "label": "Lifetime"
                                 }
                             ],
                             "id": "p1",
-                            "productType": "INR5999"
+                            "productType": "INR399"
                         }
                     ],
                     "spayee:purchaseType": "cart"
                 }
             },
             {
-                "_id": "61af23880cf29556db81488e",
+                "_id": "61b345940cf21bec9435d880",
                 "spayee:resource": {
-                    "spayee:title": "Solutioning Cloud Operations",
+                    "spayee:title": "End to End Automated Testing",
                     "spayee:publisher": "Learnlytica",
-                    "spayee:courseUrl": "CloudOps-Solutioning",
+                    "spayee:courseUrl": "End-to-End-Automated-Testing",
+                    "spayee:courseType": "normal",
+                    "spayee:coverVersion": 1,
+                    "spayee:gstRate": 18,
+                    "spayee:mrp": 1499,
+                    "spayee:price": 1399,
+                    "spayee:pricingIncludingTaxes": true,
+                    "spayee:productVariants": [
+                        {
+                            "validityVariants": [
+                                {
+                                    "type": "ONE_TIME",
+                                    "validityType": "none",
+                                    "mrp": 1499,
+                                    "price": 1399,
+                                    "id": "v1-1499-1399",
+                                    "label": "Lifetime"
+                                }
+                            ],
+                            "id": "p1",
+                            "productType": "INR399"
+                        }
+                    ],
+                    "spayee:purchaseType": "cart",
+                    "spayee:language": "English",
+                    "spayee:shortDescription": ""
+                }
+            },
+            {
+                "_id": "61b347d70cf2541ad38798eb",
+                "spayee:resource": {
+                    "spayee:title": "Testing with Cucumber",
+                    "spayee:publisher": "Learnlytica",
+                    "spayee:courseUrl": "Cucumber",
                     "spayee:courseType": "normal",
                     "spayee:coverVersion": 1,
                     "spayee:language": "English",
@@ -134,7 +134,7 @@
                 }
             }
         ],
-        "total": 10,
+        "total": 5,
         "limit": 4,
         "skip": 0
     },
