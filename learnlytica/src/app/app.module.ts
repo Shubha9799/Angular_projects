@@ -26,6 +26,7 @@ import { Route, Routes } from '@angular/router';
 import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TitlePipe } from './pipes/title.pipe';
 import { BracketPipe } from './pipes/bracket.pipe';
+import { TxtbackgroundDirective } from './directives/txtbackground.directive';
 
 
 const myRoutes: Routes = [
@@ -55,6 +56,7 @@ const myRoutes: Routes = [
     ReactiveComponent,
     TitlePipe,
     BracketPipe,
+    TxtbackgroundDirective,
     
    
     
