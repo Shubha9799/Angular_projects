@@ -24,6 +24,7 @@ import { ListProfileComponent } from './components/list-profile/list-profile.com
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
 import { Route, Routes } from '@angular/router';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { TitlePipe } from './pipes/title.pipe';
 
 
 const myRoutes: Routes = [
@@ -51,6 +52,7 @@ const myRoutes: Routes = [
     ListProfileComponent,
     ProfileDetailsComponent,
     ReactiveComponent,
+    TitlePipe,
     
    
     

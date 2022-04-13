@@ -13,6 +13,7 @@ import { ConfigService } from 'src/app/services/config.service';
     eList: any;
     fList: any;
     gList: any;
+    mytitle:string='thbs';
   
     constructor(private call: ConfigService) { }
   
