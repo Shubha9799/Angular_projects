@@ -36,10 +36,10 @@ export class ListProfileComponent implements OnInit{
     userData?:any;
   userTitle: any;
   userFromApi: any;
-  user: any;
+ 
   mydata: any;
     
-  constructor(private myuserservice:UserService) { }
+  constructor(private user:UserService) { }
 
   ngOnInit(): void {
    // this.userData=this.myuserservice.getUserList();
