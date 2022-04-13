@@ -1,6 +1,6 @@
 <p>list-profile works!</p>
-<h5>{{userData|json}}</h5>
-<p *ngFor="let user of userData">{{user.Data}}</p>
+<!--<h5>{{userData|json}}</h5>-->
+<li *ngFor="let user of userData">{{user.name}}-->{{user.city}}</li>
 <br>
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
