@@ -11,6 +11,7 @@ import { LoginComponent } from './components/login/login.component';
 import { ListProfileComponent } from './components/list-profile/list-profile.component';
 import { ProfileDetailsComponent } from './profile-details/profile-details.component';
 import { ReactiveComponent } from './components/reactive/reactive.component';
+import { TemplateformComponent } from './components/templateform/templateform.component';
 
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path:'profiles', component:ListProfileComponent },
   {path:'profiles/pid',component:ProfileDetailsComponent}  ,
   {path:'rxjs',component:ReactiveComponent},
+  {path:'templateform',component:TemplateformComponent},
 
   {path:'**',component:NotfoundComponent}
 

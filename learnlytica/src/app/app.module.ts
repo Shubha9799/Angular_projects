@@ -15,7 +15,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { NotfoundComponent } from './components/notfound/notfound.component';
 import { HomeComponent } from './components/home/home.component';
 import { AddressComponent } from './components/address/address.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 
 import {HttpClientModule} from '@angular/common/http';
@@ -27,6 +27,7 @@ import { ReactiveComponent } from './components/reactive/reactive.component';
 import { TitlePipe } from './pipes/title.pipe';
 import { BracketPipe } from './pipes/bracket.pipe';
 import { TxtbackgroundDirective } from './directives/txtbackground.directive';
+import { TemplateformComponent } from './components/templateform/templateform.component';
 
 
 const myRoutes: Routes = [
@@ -57,6 +58,7 @@ const myRoutes: Routes = [
     TitlePipe,
     BracketPipe,
     TxtbackgroundDirective,
+    TemplateformComponent,
     
    
     
@@ -67,7 +69,8 @@ const myRoutes: Routes = [
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    MaterialExampleModule
+    MaterialExampleModule,
+    FormsModule
   
   
 
