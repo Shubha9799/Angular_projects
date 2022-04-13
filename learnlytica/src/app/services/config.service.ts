@@ -6,14 +6,24 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ConfigService {
 
-  constructor(private myhttp:HttpClient) { }
-  getCourseConfig()
-  {
-    return this.myhttp.get('https://httpstat.us/200');
+  
+  constructor(private http: HttpClient) { }
+
+  getCourseListCourse() {
+    return this.http.get('assets/mock-data/course-list.json')
   }
 
-  getCourseList()
-  {
-    return this.myhttp.get('assets/mock-data/course-list.json');
+  getCourseListCourse1() {
+    return this.http.get('assets/mock-data/course-list2.json')
+  }
+
+  getCourseListCourse2() {
+    return this.http.get('assets/mock-data/appdevelopment.json')
+  }
+  getCourseListCourse3() {
+    return this.http.get('assets/mock-data/machine.json')
+  }
+  getCourseListCourse4() {
+    return this.http.get('assets/mock-data/testing.json')
   }
 }
