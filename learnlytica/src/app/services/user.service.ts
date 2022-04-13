@@ -5,6 +5,9 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
+  getUserListFromApi() {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private myhttp:HttpClient) { }
   getUserList(){
