@@ -22,8 +22,8 @@ export class AdminLoginComponent implements OnInit {
 
   onSubmit() {
     if (
-      this.adminLogIn.get("uid").value == this.uid &&
-      this.adminLogIn.get("pwd").value == this.pwd
+      this.adminLogIn.get("uid")?.value == this.uid &&
+      this.adminLogIn.get("pwd")?.value == this.pwd
     ) {
       this._snackBar._snackBarPOP(
         "Welcome Admin to Portal 🎉🎉",
