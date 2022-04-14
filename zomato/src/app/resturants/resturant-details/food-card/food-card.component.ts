@@ -12,9 +12,10 @@ import { CurrentOrderComponent } from '../current-order/current-order.component'
 export class FoodCardComponent implements OnInit {
   data: any = {};
   vegFood: any = {};
-  id: number;
+  id!: number;
   static _orderCount: number = 0;
   static _totalOrderedFoods = []
+  
 
   constructor(
     private _foodData: ResturantsDetailsService,
@@ -33,13 +34,13 @@ export class FoodCardComponent implements OnInit {
     console.log(this.vegFood);
   }
 
-  addFoodForOrder(foodItem) {
+  addFoodForOrder(foodItem: any) {
     FoodCardComponent._orderCount++ ;
     this._matBottomSheet.open(CurrentOrderComponent, {
       data: {
         food: foodItem,
         itemCount: FoodCardComponent._orderCount,
-        totalOrderedFoods: FoodCardComponent._totalOrderedFoods.push(foodItem)
+        totalOrderedFoods: FoodCardComponent._totalOrderedFoods.push()
       }
     });
     console.log(FoodCardComponent._totalOrderedFoods);

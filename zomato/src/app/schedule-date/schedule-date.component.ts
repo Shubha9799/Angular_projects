@@ -10,7 +10,8 @@ import { FormGroup, FormControl, Validators } from "@angular/forms";
 })
 export class ScheduleDateComponent implements OnInit {
   public scheduleFormm!: FormGroup;
-  data:any;
+  data!:any;
+  
 
   public scheduleForm: FormGroup = new FormGroup({
     date: new FormControl("", Validators.required),

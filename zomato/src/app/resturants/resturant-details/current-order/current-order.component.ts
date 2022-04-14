@@ -3,7 +3,7 @@ import {
   MatBottomSheetRef,
   MAT_BOTTOM_SHEET_DATA
 } from "@angular/material/bottom-sheet";
-import { FoodCardComponent } from "../foodCard/foodCard.component";
+import { FoodCardComponent } from "../food-card/food-card.component";
 import { MatDialog } from "@angular/material/dialog";
 import { PlaceOrderComponent } from "src/app/place-order/place-order.component";
 
@@ -18,6 +18,7 @@ export class CurrentOrderComponent implements OnInit {
   total!: number;
   private _addClick = 0;
   private _deleteClick = 0;
+  
 
   constructor(
     private _bottomSheetRef: MatBottomSheetRef<CurrentOrderComponent>,

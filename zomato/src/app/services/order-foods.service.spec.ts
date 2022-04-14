@@ -1,5 +1,5 @@
 import { TestBed, async, inject } from '@angular/core/testing';
-import { OrderFoodsService } from './orderFoods.service';
+import { OrderFoodsService } from './order-foods.service';
 
 describe('Service: OrderFoods', () => {
   beforeEach(() => {

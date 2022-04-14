@@ -1,5 +1,5 @@
 import { TestBed, async, inject } from '@angular/core/testing';
-import { AddressDeliverTimeService } from './addressDeliverTime.service';
+import { AddressDeliverTimeService } from './address-deliver-time.service';
 
 describe('Service: AddressDeliverTime', () => {
   beforeEach(() => {
