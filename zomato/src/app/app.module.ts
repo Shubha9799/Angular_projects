@@ -23,7 +23,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { ScheduleDateComponent } from './schedule-date/schedule-date.component';
 import { SnackbarrService } from './services/snackbarr.service';
 import { OrderHistoryComponent } from './order-history/order-history.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
+import { ServiceWorkerModule} from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { OfferDetailsComponent } from './offer-details/offer-details.component';
 import { FoodCardComponent } from './resturants/resturant-details/food-card/food-card.component';
@@ -66,9 +66,16 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    
     //FontAwesomeModule,
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production
+    }),
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production,
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
     }),
   ],
   providers: [
