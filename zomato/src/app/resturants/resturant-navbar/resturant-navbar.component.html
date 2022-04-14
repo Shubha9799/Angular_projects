@@ -1,0 +1,89 @@
+<div class="flex mx-auto m-auto flex-row flex-wrap justify-evenly p-2 w-full">
+  <div class="text-center m-auto mx-auto">
+    <div routerLink="/" class="ml-3 cursor-pointer text-center">
+      <div class="text-xl">FoodKa</div>
+    </div>
+  </div>
+  <div class="text-center md:mr-10 mr-4 ">
+    <mat-form-field appearance="fill">
+      <mat-label class="width">Select address</mat-label>
+      <mat-icon class="mat mx-auto m-auto" matPrefix>navigation</mat-icon>
+      <mat-select>
+        <mat-option *ngFor="let address of addresses" [value]="address.address">
+          <mat-icon class="mat-18">{{ address.icon }}</mat-icon>
+          {{ address.address }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="text-center md:mr10 mr-4 ">
+    <mat-form-field appearance="fill">
+      <mat-label class="width">Delivery Time</mat-label>
+      <mat-select class="no-underline">
+        <mat-option
+          *ngFor="let timinf of timmings; let i = index"
+          [value]="timinf.value"
+        >
+          <div (click)="openDialog(i)">
+            <mat-icon class="mat-18">{{ timinf.icon }}</mat-icon>
+            {{ timinf.value }}
+          </div>
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </div>
+  <div class="text-center mx-auto">
+    <form class="example-form mx-auto">
+      <mat-form-field class="example-full-width mx-auto" appearance="fill">
+        <mat-label>Search</mat-label>
+        <input type="search" matInput placeholder="Biryani Kabab" />
+        <mat-icon matSuffix>search</mat-icon>
+      </mat-form-field>
+    </form>
+  </div>
+  <div class="text-center mx-auto" *ngIf="loggedUserName != ''">
+    <div
+      mat-button
+      [matMenuTriggerFor]="menu"
+      class="mx-auto cursor-pointer mt-4 m-auto"
+    >
+      {{ loggedUserName }}
+    </div>
+
+    <mat-menu #menu="matMenu">
+      <button (click)="orderHistory()"  mat-menu-item>
+        <mat-icon class="hover:bg-gray-100 text-foodka-red mat-18"
+          >history</mat-icon
+        >Orders
+      </button>
+      <button mat-menu-item>
+        <mat-icon class="hover:bg-gray-100 text-foodka-red mat-18"
+          >favorite</mat-icon
+        >Favourites
+      </button>
+      <button mat-menu-item>
+        <mat-icon class="hover:bg-gray-100 text-foodka-red mat-18"
+          >payment</mat-icon
+        >Payment
+      </button>
+      <button mat-menu-item>
+        <mat-icon class="hover:bg-gray-100 text-foodka-red mat-18"
+          >help</mat-icon
+        >Help
+      </button>
+      <button mat-menu-item>
+        <mat-icon class="hover:bg-gray-100 text-foodka-red mat-18"
+          >accessibility</mat-icon
+        >Accounts
+      </button>
+      <button
+        mat-menu-item
+        (click)="onLoggedOut()"
+        [routerLink]="['/']"
+        routerLinkActive="router-link-active"
+      >
+        Sign out
+      </button>
+    </mat-menu>
+  </div>
+</div>
