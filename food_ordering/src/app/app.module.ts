@@ -13,6 +13,7 @@ import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { DetailComponent } from './components/detail/detail.component';
 
 
 
@@ -25,6 +26,7 @@ import { MaterialModule } from './material/material.module';
     ContactComponent,
     LoginComponent,
     SignUpComponent,
+    DetailComponent,
    
    
   ],
