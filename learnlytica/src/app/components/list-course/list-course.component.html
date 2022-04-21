@@ -7,12 +7,16 @@
     {{300|bracket}}
 </pre>
 
-
-  
+<br>
+<h5>Data from database</h5><pre>(learn_dbconn)</pre>
+<div class="container" style="border: 2px solid #5755d9;">
 <!--Backend call  from express node application-->
 <div *ngFor="let user of userList">
-    {{user | json}}
+    {{user|json}}
 </div>
+</div>
+
+<br>
 
 <div class="container">
     <div class="dropdown">
