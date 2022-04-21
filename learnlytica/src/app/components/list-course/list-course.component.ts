@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ConfigService } from 'src/app/services/config.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-list-course',
@@ -13,12 +14,23 @@ import { ConfigService } from 'src/app/services/config.service';
     eList: any;
     fList: any;
     gList: any;
+  userList: any;
+ 
+  
    
   
-    constructor(private call: ConfigService) { }
+    constructor(private call: ConfigService, private myUserSrv:UserService) { }
     myTitle:String="THBS"; //custom pipe
-  
+ 
     ngOnInit(): void {
+       //backend call to api/users
+       this.myUserSrv.getProfiles().subscribe((result: any) => {
+        this.userList = result;
+      })
+    
+
+
+
   
       this.call.getCourseListCourse().subscribe((value) => {
         this.cList = value
