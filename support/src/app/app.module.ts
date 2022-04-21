@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { HeaderComponent } from './header/header.component';
 import { MainContainerComponent } from './main-container/main-container.component';
 import { CreateTicketComponent } from './create-ticket/create-ticket.component';
+import { ListTicketComponent } from './list-ticket/list-ticket.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CreateTicketComponent } from './create-ticket/create-ticket.component';
     LoginComponent,
     HeaderComponent,
     MainContainerComponent,
-    CreateTicketComponent
+    CreateTicketComponent,
+    ListTicketComponent
   ],
   imports: [
     BrowserModule,
