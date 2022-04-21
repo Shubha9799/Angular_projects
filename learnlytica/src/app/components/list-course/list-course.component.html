@@ -11,10 +11,27 @@
 <h5>Data from database</h5><pre>(learn_dbconn)</pre>
 <div class="container" style="border: 2px solid #5755d9;">
 <!--Backend call  from express node application-->
-<div *ngFor="let user of userList">
-    {{user|json}}
+
+<table *ngFor="let user of userList" style="border:1 px solid blue;">
+    <tr>
+      <th>Fname</th>
+      <th>Lname</th>
+      <th>Company</th>
+      <th>Designation</th>
+      <th>Address</th>
+      <th>Join_date</th>
+    </tr>
+    <tr>
+      <td>{{user.Fname}}</td>
+      <td>{{user.Lname}}</td>
+      <td>{{user.Company}}</td>
+      <td>{{user.Designation}}</td>
+      <td>{{user.Address}}</td>
+      <td>{{user.Join_date}}</td>
+    </tr>
+  </table>
 </div>
-</div>
+  
 
 <br>
 
