@@ -1,0 +1,42 @@
+<div class="container">
+    <br>
+    <h5>Create Ticket form</h5>
+    <form #f="ngForm" novalidate style="border: 1px solid red; padding: 20px;">
+        
+        <div class="form-group">
+            <label><b>Ticket Title</b></label>
+            <input ngModel name="fname" type="text" class="form-control" #myFname="ngModel" required>
+            <div class="text-danger" *ngIf=" myFname.touched && myFname.invalid">
+                *Please enter the title for ticket
+            </div>
+        </div>
+        <div class="form-group">
+            <label><b>Description</b></label>
+            <input name="lname" ngModel type="text" class="form-control" #mylname="ngModel" required>
+            <div class="text-danger" *ngIf=" mylname.touched && mylname.invalid">
+                *Fill the description for ticket
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label><b>Priority</b></label>
+            <select name="mylang" ngModel class="form-control" #mylangs="ngModel" required>
+                <option value=" ">Priority</option>
+                <option *ngFor="let lang of listLangs" [value]="lang">{{lang}}</option>
+            </select>
+            <div class="text-danger" *ngIf="mylangs.touched && mylangs.invalid ">
+                Choose the priority option
+            </div>
+
+            
+        </div>
+        <br>
+        <div class="form-group">
+
+            <button (click)="getFormsValue(f)">Create Ticket</button>
+
+        </div>
+
+
+    </form>
+</div>
