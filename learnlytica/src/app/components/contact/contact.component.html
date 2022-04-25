@@ -52,8 +52,8 @@
      {{myform.value|json}}
       <br>
 
-      <button [disabled]="myform.invalid" type="button" class="btn btn-primary" value="Submit">Submit</button>
-     
+      <!--<button [disabled]="myform.invalid" type="button" class="btn btn-primary" value="Submit">Submit</button>-->
+      <button class="btn btn-primary" (click)="getValues()">Submit</button>
      
     </form>
 </div>
