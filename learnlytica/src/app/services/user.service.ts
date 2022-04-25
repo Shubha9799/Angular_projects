@@ -24,4 +24,10 @@ export class UserService {
        
  
    }
+
+   submitContactDetails(data: any) {
+
+    return this.myhttp.post('http://localhost:4200/api/users/contact', data);
+   }
+ 
 }

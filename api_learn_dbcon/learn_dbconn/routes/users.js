@@ -16,6 +16,19 @@ router.get('/', function (req, res, next) {
   //res.send('respond with a resource');
 });
 
+router.post('/contact', function (req, res, next) {
+
+  console.log(req.body);
+  
+  res.send('I am post call');
+  // dbConnection.query('select * from user_profile', (error, results, fields) => {
+  //   if (error) throw error;
+  //   res.send(results)
+  // });
+});
+
+
+
 //post method
 router.post('/profile', (req, res, next) => {
   let{

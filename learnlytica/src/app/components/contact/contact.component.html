@@ -1,5 +1,7 @@
 <div  class="border border-info m-2 p-3" style="background-color: lightgoldenrodyellow;">
   <h2 style="color: blue;">Contact Form</h2>
+  {{myform.value | json}}
+  <br>
   
   <form novalidate [formGroup]="myform">
       <fieldset>
