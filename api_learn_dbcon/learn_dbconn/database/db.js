@@ -1,9 +1,13 @@
 var mysql      = require('mysql');
+//db connection using env variable
+require('dotenv').config();
+//console.log(process.env)
+
 var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : 'password',
-  database : 'api_learn',
+  host     : process.env.DB_HOST,
+  user     : process.env.DB_USER,
+  password : process.env.DB_PASSWORD,
+  database : process.env.DB_NAME,
   insecureAuth : true
 });
  
