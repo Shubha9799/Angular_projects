@@ -18,7 +18,7 @@ let createTable = `create table if not exists user_profile(
   completed tinyint(1) not null default 0
 )`;
 
-mysqlConnect().query(createTable, (error, results, fields) => {
+connection().query(createTable, (error, results, fields) => {
   if (error) throw error;
 });
  
