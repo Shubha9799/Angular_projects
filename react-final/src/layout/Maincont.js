@@ -3,6 +3,7 @@ import React from "react";
 import Home from '../pages/Home';
 import User from '../pages/User';
 import List from '../pages/List';
+import Hooks from '../pages/Hooks';
 
 
 export default class MainLayout extends React.Component {
@@ -14,6 +15,7 @@ export default class MainLayout extends React.Component {
                     <Route path="/" element={<Home />} />
                     <Route path="/user" element={<User />} />
                     <Route path="/list" element={<List />} />
+                    <Route path="/hooks" element={<Hooks />} />
                 </Routes>
             </div>
         )
