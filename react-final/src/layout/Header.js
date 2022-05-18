@@ -5,15 +5,28 @@ export default  class Header extends React.Component{
     render() {
         return (
             <>
-                <ul>
-                    <li>
-                        <Link to="/">Home </Link>
-                        <br></br>
-                        <Link to="/user">About</Link>
-                        <br></br>
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
+
+            
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <ul className="navbar-nav">
+                        <li className="nav-item active">
+                            <Link to="/"><b>Home &nbsp; &nbsp;</b></Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/user"><b>About&nbsp; &nbsp;</b></Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/list"><b>Course-list&nbsp; &nbsp;</b></Link>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
             </>
         )
     }

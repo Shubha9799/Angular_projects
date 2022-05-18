@@ -19,13 +19,6 @@ function App() {
       <h1>Working with React JS</h1>
       <br></br>
      
-      <Routes>
-       
-        <Route path="/user" element={<User />} />
-        <Route path="/contact" element={<Contact/>} />
-       
-        <Route path="/" element={<Home />}/>
-      </Routes>
       <br>
       </br>
       <Maincont></Maincont>

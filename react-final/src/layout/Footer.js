@@ -1,10 +1,10 @@
 
 
 
-export default function FooterLayout(props){
+export default function Footer(props){
    return(
        <>
-           <p>@Copyright from react.org.com</p>       
+           <p className="th-footer"><b>@Copyright from react.org.com</b></p>       
        </>
    )
 }
