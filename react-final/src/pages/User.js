@@ -22,7 +22,8 @@ export default class User extends React.Component {
     render() {
         return (
             <div>
-                <b>User Details</b>
+                <h4><u>User Details</u></h4>
+                <br></br>
                <b> Name : </b>  {this.state.name} <br></br>
                <b> Age :  </b> {this.state.age} <br></br>
                <b> Cmpy: </b> {this.state.Cmpy}<br></br>
