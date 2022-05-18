@@ -15,10 +15,9 @@ function App() {
       <Header></Header>
       <br>
       </br>
-      <h1>Routes</h1>
+      <h1>Working with React JS</h1>
       <br></br>
-      <Maincont></Maincont>
-      <br></br>
+     
       <Routes>
        
         <Route path="/user" element={<User />} />
@@ -27,6 +26,8 @@ function App() {
       </Routes>
       <br>
       </br>
+      <Maincont></Maincont>
+      <br></br>
       <Footer></Footer>
     </div>
   );
