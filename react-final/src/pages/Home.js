@@ -1,11 +1,70 @@
-export default function HomePage(props) {
+import React, { useState } from "react";
+import userList from "./data";
+import Usertable from "../tables/Usertable";
+import AddUserForm from "../forms/AddUserForm";
+import EditUserForm from "../forms/EditUserForm.jsx";
 
 
-    return (
-        <>
-            <b>I am in home page</b>
-            <br></br>
-        </>
-    );
+const Home = () => {
+  const [users, setUsers] = useState(userList);
 
-}
+  const addUser = (user) => {
+    user.id = users.length + 1;
+    setUsers([...users, user]);
+  };
+
+  //Delete operation
+  const deleteUser = id => setUsers(users.filter(user => user.id !== id));
+  <Usertable users={users} deleteUser={deleteUser} />
+
+
+  //Edit operation
+  const [editing, setEditing] = useState(false);
+  const initialUser = {id: null, name: '', username: ''}; 
+  const [currentUser, setCurrentUser] = useState(initialUser);
+
+  const editUser = (id, user) => {
+    setEditing(true);
+    setCurrentUser(user);
+  }
+  const updateUser = (newUser) => {
+    setUsers(users.map(user => (user.id === currentUser.id ? newUser : user)))
+  }
+
+  
+
+  return (
+    <div className="container">
+      <h1>React CRUD App with Hooks</h1>
+      <div className="row">
+        <div className="five columns">
+          {editing ? (
+            <div>
+              <h2>Edit user</h2>
+              <EditUserForm
+                currentUser={currentUser}
+                setEditing={setEditing}
+                updateUser={updateUser}
+              />
+            </div>
+          ) : (
+            <div>
+              <h2>Add user</h2>
+              <AddUserForm addUser={addUser} />
+            </div>
+          )}
+        </div>
+        <div className="seven columns">
+          <h2>View users</h2>
+          <Usertable
+            users={users}
+            deleteUser={deleteUser}
+            editUser={editUser}
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
