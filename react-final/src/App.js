@@ -4,6 +4,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import User from './pages/User';
 import Home from './pages/Home';
+import Contact from './pages/Contact';
 
 import Header  from './layout/Header';
 import Footer from './layout/Footer';
@@ -21,6 +22,7 @@ function App() {
       <Routes>
        
         <Route path="/user" element={<User />} />
+        <Route path="/contact" element={<Contact/>} />
        
         <Route path="/" element={<Home />}/>
       </Routes>

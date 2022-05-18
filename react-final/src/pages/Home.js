@@ -3,7 +3,8 @@ export default function HomePage(props) {
 
     return (
         <>
-            <p>I am in home page</p>
+            <b>I am in home page</b>
+            <br></br>
         </>
     );
 
