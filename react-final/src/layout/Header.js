@@ -32,6 +32,9 @@ export default  class Header extends React.Component{
         <li class="nav-item">
         <Link className="nav-link active" aria-current="page"  to="/reg">Register</Link>
         </li>
+        <li class="nav-item">
+        <Link className="nav-link active" aria-current="page"  to="/login">Login</Link>
+        </li>
       </ul>
     </div>
   </div>
