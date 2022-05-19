@@ -35,12 +35,12 @@ const Home = () => {
 
   return (
     <div className="container">
-      <h1>React CRUD App with Hooks</h1>
+      <h4>React CRUD App with Hooks</h4>
       <div className="row">
         <div className="five columns">
           {editing ? (
             <div>
-              <h2>Edit user</h2>
+              <h3>Edit user</h3>
               <EditUserForm
                 currentUser={currentUser}
                 setEditing={setEditing}
@@ -49,13 +49,14 @@ const Home = () => {
             </div>
           ) : (
             <div>
-              <h2>Add user</h2>
+              <h3>Add user</h3>
               <AddUserForm addUser={addUser} />
             </div>
           )}
         </div>
-        <div className="seven columns">
-          <h2>View users</h2>
+        <br></br>
+        <div className="three columns">
+          <h3>View users</h3>
           <Usertable
             users={users}
             deleteUser={deleteUser}
