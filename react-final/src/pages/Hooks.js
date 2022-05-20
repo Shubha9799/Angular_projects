@@ -1,25 +1,54 @@
-
 import React, { useState } from 'react';
-export default function Hooks() {
-    const [count, setCount] = useState(1);
-    const [age, setMyAge] = useState(18);
 
-    return (
-        <div>
-            <b>I am in hooks page</b>
-            <p>{count} </p>
-            <button onClick={() => setCount(count + 1)}>
-                Click Here
-            </button>
+export default class Hooks extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            users: [],       //initialization of state
+            error: null,
+            isLoaded: false
+        }
+    }
+    // sending api call 
+    componentDidMount() {
 
-            <br></br>
-            <br></br>
+        fetch('https://reqres.in/api/users?page=1')
+            .then(res => res.json())
+            .then(
+                (success) => {
+                    this.setState({
+                        isLoaded: true,
+                        users: success.data
+                    });
+                },
+                (error) => {
+                    this.setState({
+                        error: error
 
-            
-        </div>
+                    });
+                }
+            )
 
-    )
+    }
 
+    render() {
+        const { users, isLoaded, error } = this.state;
+
+        return (
+            <ul>
+                <b>Fetching API data inside class based component</b>
+                <br></br>
+                <br></br>
+                <u><b>Names of users</b></u>
+                <br></br>
+                <br></br>
+                {users.map(item => (
+                   
+                    <li>
+                        {item.first_name} {item.last_name}
+                    </li>
+                ))}
+            </ul>
+        )
+    }
 }
-
- 
